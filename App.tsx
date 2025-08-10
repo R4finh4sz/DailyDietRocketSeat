@@ -7,9 +7,10 @@ import { Loading } from "src/Components/Loading";
 import theme from "src/theme";
 
 import { Routes } from "./src/routes";
+import { NunitoSans_400Regular, NunitoSans_700Bold } from "@expo-google-fonts/nunito-sans";
 
 export default function app(){
-  const [fontsLoaded] = useFonts({ Roboto_400Regular, Roboto_700Bold});
+  const [fontsLoaded] = useFonts({ NunitoSans_400Regular, NunitoSans_700Bold});
 
 
   return (
