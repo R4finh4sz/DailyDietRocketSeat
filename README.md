@@ -84,9 +84,10 @@ Não há licenças neste projeto.
 
 ## 👨‍💻 Autor
 
-**Rafael Souz Santana** - [@R4finh4sz](https://github.com/R4finh4sz)
+**Rafael Souza Santana** - [@R4finh4sz](https://github.com/R4finh4sz)
 
 ---
 
 ⭐ Se este projeto te ajudou, considere dar uma estrela no repositório!
+
 
