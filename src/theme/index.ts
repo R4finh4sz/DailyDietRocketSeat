@@ -13,12 +13,12 @@ export default {
     GRAY_5: '#DDDEDF',
     GRAY_6: '#EFF0F0',
     GRAY_7: '#FAFAFA',
-    WHITE: '#FFFFFF'
+    WHITE: '#FFFFFF',
   },
 
   FONT_FAMILY: {
     REGULAR: 'NunitoSans_400Regular',
-    BOLD: 'NunitoSans_700Bold'
+    BOLD: 'NunitoSans_700Bold',
   },
 
   FONT_SIZE: {
@@ -27,6 +27,6 @@ export default {
     LG: 16,
     XL: 18,
     XXL: 24,
-    XXXL: 32
-  }
+    XXXL: 32,
+  },
 };
