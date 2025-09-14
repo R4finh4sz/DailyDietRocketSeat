@@ -1,19 +1,21 @@
-import {ThemeProvider} from 'styled-components';
-import {StatusBar} from 'react-native';
+import { ThemeProvider } from 'styled-components';
+import { StatusBar } from 'react-native';
+import { Slot } from 'expo-router';
 
-import {Loading} from 'src/Components/Loading';
-
+import { Loading } from 'src/Components/Loading';
 import theme from 'src/theme';
 
-import {Routes} from './src/routes';
 import {
   useFonts,
   NunitoSans_400Regular,
   NunitoSans_700Bold,
 } from '@expo-google-fonts/nunito-sans';
 
-export default function app() {
-  const [fontsLoaded] = useFonts({NunitoSans_400Regular, NunitoSans_700Bold});
+export default function App() {
+  const [fontsLoaded] = useFonts({
+    NunitoSans_400Regular, 
+    NunitoSans_700Bold
+  });
 
   return (
     <ThemeProvider theme={theme}>
@@ -22,7 +24,7 @@ export default function app() {
         backgroundColor="transparent"
         translucent
       />
-      {fontsLoaded ? <Routes /> : <Loading />}
+      {fontsLoaded ? <Slot /> : <Loading />}
     </ThemeProvider>
   );
 }
