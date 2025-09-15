@@ -23,11 +23,11 @@ export default function HomeScreen() {
   const router = useRouter();
 
   const handlePercentCardPress = () => {
-    router.push('/statistics');
+    router.push('Statistics');
   };
 
   const handleNewMealPress = () => {
-    router.push('/new-meal');
+    router.push('/NewMeal');
   };
 
   return (
