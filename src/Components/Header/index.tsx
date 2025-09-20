@@ -9,7 +9,6 @@ export function Header(){
         <Container>
             <Logo source={logoImg}/>
             <TouchableOpacity><ProfileStyle source={Profile}/></TouchableOpacity>
-            
         </Container>
     )
 }
