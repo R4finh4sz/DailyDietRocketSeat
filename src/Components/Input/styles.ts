@@ -1,5 +1,6 @@
-import styled, { css } from 'styled-components/native';
-import { TextInput, View } from 'react-native';
+import styled, {css} from 'styled-components/native';
+import {View} from 'react-native';
+import MaskInput from 'react-native-mask-input';
 
 export const Container = styled(View)`
   margin-bottom: 16px;
@@ -9,44 +10,44 @@ interface InputWrapperProps {
   hasError: boolean;
   isDisabled: boolean;
   customHeight?: number;
+  isMultiline?: boolean;
 }
 
 export const InputWrapper = styled(View)<InputWrapperProps>`
   flex-direction: row;
-  align-items: center;
   background-color: #fcfcfc;
   border-width: 1px;
   border-color: #d9d9d9;
   border-radius: 12px;
   padding-horizontal: 16px;
-  min-height: 56px;
 
-  ${({ customHeight }) =>
+  ${({customHeight}) =>
     customHeight
       ? css`
           height: ${customHeight}px;
-          padding-vertical: 0;
         `
       : css`
-          padding-vertical: 14px;
+          height: 56px;
         `}
 
-  ${({ hasError }) =>
+  ${({hasError}) =>
     hasError &&
     css`
       border-color: #ff4444;
     `}
 
-  ${({ isDisabled }) =>
+  ${({isDisabled}) =>
     isDisabled &&
     css`
       opacity: 0.6;
     `}
 `;
 
-export const StyledInput = styled(TextInput)`
+export const StyledInput = styled(MaskInput)`
   flex: 1;
   font-size: 16px;
   font-family: 'Poppins_Regular';
   color: #000000;
+  /* O próprio input lida com seu padding interno para um layout mais estável */
+  padding-vertical: 14px;
 `;
